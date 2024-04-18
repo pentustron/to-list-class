@@ -1,0 +1,34 @@
+<!DOCTYPE html> <!-- Declara que el documento sigue la especificación de HTML -->
+<html lang="en"> <!-- Inicia el elemento raíz del documento HTML, define el idioma como inglés -->
+<head> <!-- Inicia la sección de metadatos del documento -->
+<meta charset="UTF-8"> <!-- Define el conjunto de caracteres del documento como UTF-8 -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Establece la escala inicial y el ancho de la ventana del dispositivo -->
+<title>Lista de Tareas</title> <!-- Establece el título de la página -->
+<link rel="stylesheet" href="styles.css"> <!-- Vincula una hoja de estilo externa llamada styles.css -->
+</head>
+
+<body> <!-- Inicia la sección del cuerpo del documento -->
+
+<div id="app"> <!-- Crea un contenedor con el identificador "app" -->
+  <h1>Lista de Tareas</h1> <!-- Encabezado principal de la página -->
+
+  <input type="text" id="taskInput" placeholder="Agregar nueva tarea"> <!-- Input para agregar nuevas tareas con el identificador "taskInput" -->
+  <button onclick="addTask()">Agregar</button> <!-- Botón que llama a la función addTask() cuando se hace clic -->
+
+  <div id="todoTasks"> <!-- Contenedor para las tareas por hacer -->
+    <h2>Tareas por hacer</h2> <!-- Encabezado para las tareas por hacer -->
+    <div id="taskList"></div> <!-- Contenedor para la lista de tareas por hacer -->
+  </div>
+
+  <div id="completedTasks"> <!-- Contenedor para las tareas completadas -->
+    <h2>Tareas realizadas</h2> <!-- Encabezado para las tareas realizadas -->
+    <div id="completedTaskList"></div> <!-- Contenedor para la lista de tareas completadas -->
+    <button onclick="removeAllCompleted()">Eliminar todas las tareas realizadas</button> <!-- Botón que llama a la función removeAllCompleted() cuando se hace clic -->
+  </div>
+
+</div> <!-- Fin del contenedor "app" -->
+
+<script src="script.js"></script> <!-- Vincula un archivo JavaScript externo llamado script.js -->
+</body>
+</html> <!-- Cierra el documento HTML -->
+

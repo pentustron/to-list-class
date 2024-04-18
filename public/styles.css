@@ -1,0 +1,64 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Define la fuente de texto para el cuerpo del documento */
+  background-color: #f8f9fa; /* Establece el color de fondo del cuerpo del documento */
+  background-image: url('https://static.vecteezy.com/system/resources/thumbnails/003/732/337/small_2x/childish-background-of-colorful-flat-clouds-photo.jpg'); /* Establece la imagen de fondo del cuerpo del documento */
+  background-size: cover; /* Escala la imagen de fondo para cubrir todo el área del cuerpo del documento */
+  background-repeat: no-repeat; /* Evita que la imagen de fondo se repita */
+  background-attachment: fixed; /* Fija la imagen de fondo en su posición mientras se desplaza la página */
+  text-align: center; /* Centra horizontalmente el contenido del cuerpo del documento */
+}
+
+#app {
+  margin: 20px auto; /* Establece los márgenes superior e inferior a 20px y los laterales automáticos para centrar horizontalmente el elemento */
+  max-width: 600px; /* Establece el ancho máximo del elemento */
+  background-color: #fff; /* Establece el color de fondo del elemento */
+  padding: 20px; /* Agrega relleno interior al elemento */
+  border-radius: 8px; /* Establece el radio de borde para redondear las esquinas del elemento */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Agrega una sombra al elemento */
+}
+
+#taskList {
+  margin-top: 20px; /* Establece el margen superior del elemento */
+}
+
+.task {
+  margin-bottom: 10px; /* Establece el margen inferior del elemento */
+  padding: 10px; /* Agrega relleno interior al elemento */
+  background-color: #f1f1f1; /* Establece el color de fondo del elemento */
+  border-radius: 6px; /* Establece el radio de borde para redondear las esquinas del elemento */
+  display: flex; /* Establece el elemento como un contenedor de flex */
+  align-items: center; /* Alinea los elementos hijos verticalmente */
+  justify-content: space-between; /* Distribuye uniformemente los elementos hijos a lo largo del eje principal */
+}
+
+.task label {
+  margin-right: 10px; /* Establece el margen derecho del elemento */
+  flex-grow: 1; /* Hace que el elemento ocupe todo el espacio disponible */
+  color: #333; /* Establece el color del texto del elemento */
+}
+
+.task .actions {
+  display: flex; /* Establece el elemento como un contenedor de flex */
+  align-items: center; /* Alinea los elementos hijos verticalmente */
+}
+
+.task .actions button {
+  background-color: #007bff; /* Establece el color de fondo del botón */
+  color: #fff; /* Establece el color del texto del botón */
+  border: none; /* Elimina el borde del botón */
+  padding: 6px 12px; /* Establece el relleno interior del botón */
+  border-radius: 4px; /* Establece el radio de borde para redondear las esquinas del botón */
+  cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+  transition: background-color 0.3s; /* Agrega una transición suave al cambio de color de fondo del botón */
+}
+
+.task .actions button:hover {
+  background-color: #0056b3; /* Cambia el color de fondo del botón al pasar el cursor sobre él */
+}
+
+.completed {
+  text-decoration: line-through; /* Agrega una línea tachada al texto */
+  color: #6c757d; /* Establece el color del texto para elementos completados */
+}
+
+
